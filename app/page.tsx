@@ -67,7 +67,7 @@ export default function Page() {
     setOpen(false);
   };
 
-  const activeIcon = menu.find((item) => item.label === active)?.icon ?? Settings;
+  const ActiveIcon = menu.find((item) => item.label === active)?.icon ?? Settings;
 
   return (
     <div className="min-h-screen bg-[#F5F7F3] text-[#19352B]">
@@ -148,7 +148,7 @@ export default function Page() {
           ) : (
             <section className="rounded-3xl border border-[#DCE5DF] bg-white p-6 shadow-sm md:p-8">
               <div className="flex items-start gap-4">
-                <div className="rounded-2xl bg-[#EAF3D9] p-4 text-[#3D6B32]"><activeIcon size={28} /></div>
+                <div className="rounded-2xl bg-[#EAF3D9] p-4 text-[#3D6B32]"><ActiveIcon size={28} /></div>
                 <div><h2 className="text-2xl font-extrabold">{active}</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-[#718078]">{descriptions[active] ?? "Sesi operator siap diakhiri."}</p></div>
               </div>
               <div className="mt-8 rounded-2xl border border-dashed border-[#C8D5CC] bg-[#F8FAF7] p-6 text-center">
